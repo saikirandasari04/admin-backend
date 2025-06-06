@@ -8,9 +8,9 @@ const {
     updateLoanStatus,
 } = require('../controllers/Loan');
 
-router.post('/api/loan/apply',authController, applyLoan);
-router.get('/api/admin/loans',authController, getAllLoans);
-router.get('/api/loan/status',authController, getUserLoans);
-router.patch('/api/admin/loan/:id',authController, updateLoanStatus);
+router.post('/loan/apply',authController, applyLoan);
+router.get('/admin/loans',authController, getAllLoans);
+router.get('/loan/status',authController, getUserLoans);
+router.patch('/admin/loan/:id',authController, updateLoanStatus);
 
 module.exports = router;

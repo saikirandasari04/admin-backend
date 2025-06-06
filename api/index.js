@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use(cors({
-  origin: ['https://admin-backend-hi21.vercel.app', 'http://localhost:3000'], // add your allowed origins here
+  origin: ['http://localhost:3000'], // add your allowed origins here
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
 }));

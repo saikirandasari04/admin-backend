@@ -7,8 +7,8 @@ const {
     adminLogin,
 } = require('../controllers/Auth');
 
-router.post('/api/auth/register', register);
-router.post('/api/auth/login', login);
-router.post('/api/admin/login', adminLogin);
+router.post('/auth/register', register);
+router.post('/auth/login', login);
+router.post('/admin/login', adminLogin);
 
 module.exports = router;

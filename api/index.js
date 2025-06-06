@@ -7,6 +7,12 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.use(cors({
+  origin: ['https://admin-backend-hi21.vercel.app', 'http://localhost:3000'], // add your allowed origins here
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  credentials: true,
+}));
+
 // MongoDB connection (reuse connection if already connected)
 const mongoUri = 'mongodb+srv://saikirandasari04:mRCCHvIkwSiRdU8x@chatapp.md9qa.mongodb.net';
 

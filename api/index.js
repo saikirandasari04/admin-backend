@@ -16,10 +16,7 @@ async function connectToDatabase() {
   if (isConnected) {
     return;
   }
-  await mongoose.connect(mongoUri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  await mongoose.connect(mongoUri);
   isConnected = true;
 }
 

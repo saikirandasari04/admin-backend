@@ -8,10 +8,7 @@
     // Allow all origins (for development)
     app.use(cors());
 
-    mongoose.connect('mongodb+srv://saikirandasari04:mRCCHvIkwSiRdU8x@chatapp.md9qa.mongodb.net', {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    });
+    mongoose.connect('mongodb+srv://saikirandasari04:mRCCHvIkwSiRdU8x@chatapp.md9qa.mongodb.net');
 
     const Auth = require("./routes/Auth")
     const Loan = require("./routes/Loan")
